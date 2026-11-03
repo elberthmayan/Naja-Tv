@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#F5FFFFFF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+    <!-- Reorder button while reorder mode is on (focus is on the tiles then). -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#596EC1FF" />
+            <stroke android:width="1.5dp" android:color="#FF6EC1FF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+    <!-- Unfocused: dark glass, like glass_panel.xml and the Google TV pills. The white one it replaces
+         washed out over a light wallpaper: white ink on a translucent white pill has no contrast there. -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="#59000000" android:endColor="#2E000000" />
+            <stroke android:width="1dp" android:color="#33FFFFFF" />
+            <corners android:radius="21dp" />
+        </shape>
+    </item>
+</selector>
